@@ -5,14 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>机器学习资源汇总 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="论文 学界 | 2010-2016年被引用次数最多的深度学习论文（附论文下载）  微软重磅论文提出LightRNN：高效利用内存和计算的循环神经网络 100 Must-Read NLProc Papers 深度学习论文阅读路线图 Deep Learning Papers Reading Roadmap 论文《Provable Algorithms for Machine Learning Prob">
+<meta name="keywords" content="机器学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习资源汇总">
+<meta property="og:url" content="http://yoursite.com/2018/02/11/机器学习资源汇总/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="论文 学界 | 2010-2016年被引用次数最多的深度学习论文（附论文下载）  微软重磅论文提出LightRNN：高效利用内存和计算的循环神经网络 100 Must-Read NLProc Papers 深度学习论文阅读路线图 Deep Learning Papers Reading Roadmap 论文《Provable Algorithms for Machine Learning Prob">
+<meta property="og:updated_time" content="2018-02-11T12:09:24.982Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="机器学习资源汇总">
+<meta name="twitter:description" content="论文 学界 | 2010-2016年被引用次数最多的深度学习论文（附论文下载）  微软重磅论文提出LightRNN：高效利用内存和计算的循环神经网络 100 Must-Read NLProc Papers 深度学习论文阅读路线图 Deep Learning Papers Reading Roadmap 论文《Provable Algorithms for Machine Learning Prob">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-机器学习资源汇总" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-机器学习资源汇总" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/02/11/机器学习资源汇总/" class="article-date">
   <time datetime="2018-02-11T12:04:16.000Z" itemprop="datePublished">2018-02-11</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/11/机器学习资源汇总/">机器学习资源汇总</a>
+    <h1 class="article-title" itemprop="name">
+      机器学习资源汇总
     </h1>
   
 
@@ -181,77 +184,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/" class="article-date">
-  <time datetime="2018-02-11T11:52:31.000Z" itemprop="datePublished">2018-02-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/">Docker:使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</a>
-    </h1>
+    <a href="/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Docker:使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Docker：-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境"><a href="#Docker：-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境" class="headerlink" title="Docker： 使用jupyter notebook基础镜像搭建自己的PyTorch开发环境"></a>Docker： 使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</h1><p>关键字：<code>docker</code> <code>jupyter notebook</code> <code>pytorch</code> <code>spotlight</code></p>
-<p>原载地址：<a href="http://blog.csdn.net/jianchengss/article/details/78224778" target="_blank" rel="noopener">http://blog.csdn.net/jianchengss/article/details/78224778</a></p>
-<h2 id="启动最基本的jupyter-notebook镜像："><a href="#启动最基本的jupyter-notebook镜像：" class="headerlink" title="启动最基本的jupyter notebook镜像："></a>启动最基本的jupyter notebook镜像：</h2><p>使用基础镜像<a href="https://hub.docker.com/r/jupyter/datascience-notebook/" target="_blank" rel="noopener">jupyter/datascience-notebook</a>,因为它预装了常用的模块：<code>pandas, matplotlib, scipy, seaborn, scikit-learn, scikit-image, sympy, cython, patsy, statsmodel, cloudpickle, dill, numba, bokeh</code>；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --rm -p 8888:8888 jupyter/datascience-notebook:281505737f8a</span><br></pre></td></tr></table></figure></p>
-<p>其中<br><code>docker run</code>是使用一个镜像生成一个运行的容器；</p>
-<p><code>-it</code>指交互模式，启动后终端在运行着的容器里面，与之对应的有<code>-d</code>后端运行模式，启动后终端交互在实体机，要想进入容器需要使用命令<code>docker exec -it container-name bash</code> <code>docker exec -it container-name</code>意为交互模式进入正在运行的一个容器，<code>bash</code>意为进入容器后使用的命令，这里用的是bash，这样进入容器后就能执行shell；</p>
-<p><code>--rm</code>意为退出shell的时候自动删除容器，常在测试的时候使用，这样不用每次修改去删除已有的容器；</p>
-<p><code>-p 8888:8888</code>指的是端口映射，前面的是实体机的端口，后面是容器里面暴露出的端口，两边端口可以不一样，这样同一个镜像可以启动多个对应不同端口的服务；</p>
-<p><code>jupyter/datascience-notebook:281505737f8a</code>是镜像名字，冒号后面的是tag，类似于版本的概念，如果不显式的给出tag每次都回从hub上拉取latest的镜像，如果网络环境不好的话比较费时间，推荐显式给出tag，这样每次构建都会使用已有的镜像。</p>
-<p>启动后就可以在终端看到：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[I 04:01:05.691 NotebookApp] Running the core application with no additional extensions or settings</span><br><span class="line">[I 04:01:05.692 NotebookApp] Serving notebooks from local directory: /home/jovyan</span><br><span class="line">[I 04:01:05.692 NotebookApp] 0 active kernels</span><br><span class="line">[I 04:01:05.692 NotebookApp] The Jupyter Notebook is running at:</span><br><span class="line">[I 04:01:05.692 NotebookApp] http://[all ip addresses on your system]:8888/?token=0a3331628e0e35f94eb0ad543faeb3e396fbccfa3ff06e5a</span><br><span class="line">[I 04:01:05.692 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).</span><br><span class="line">[C 04:01:05.692 NotebookApp] </span><br><span class="line">    </span><br><span class="line">    Copy/paste this URL into your browser when you connect for the first time,</span><br><span class="line">    to login with a token:</span><br><span class="line">        http://localhost:8888/?token=0a3331628e0e35f94eb0ad543faeb3e396fbccfa3ff06e5a</span><br></pre></td></tr></table></figure></p>
-<p>此时是停在容器里面，打开浏览器 访问<code>http://localhost:8888/?token=0a3331628e0e35f94eb0ad543faeb3e396fbccfa3ff06e5a</code> 即可打开基本的jupyter notebook 环境，后面的token是随机生成的；</p>
-<h2 id="启动带权限的容器"><a href="#启动带权限的容器" class="headerlink" title="启动带权限的容器"></a>启动带权限的容器</h2><h3 id="生成自定义token"><a href="#生成自定义token" class="headerlink" title="生成自定义token"></a>生成自定义token</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Python脚本生成密码</span><br><span class="line">import IPython</span><br><span class="line">IPython.lib.passwd()</span><br></pre></td></tr></table></figure>
-<p>输入密码生成token<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test的token：sha1:6587feaef3b1:6b243404e4cfaafe611fdf494ee71fdaa8c4a563</span><br></pre></td></tr></table></figure></p>
-<h3 id="自定义token运行容器："><a href="#自定义token运行容器：" class="headerlink" title="自定义token运行容器："></a>自定义token运行容器：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8888:8888 jupyter/datascience-notebook start-notebook.sh --NotebookApp.password=&apos;sha1:6587feaef3b1:6b243404e4cfaafe611fdf494ee71fdaa8c4a563&apos;</span><br></pre></td></tr></table></figure>
-<p>这时访问<code>http://localhost:8888/</code>会出现输入密码的页面，输入正确的密码才能进入jupyter。</p>
-<h2 id="共享目录"><a href="#共享目录" class="headerlink" title="共享目录"></a>共享目录</h2><h3 id="v参数"><a href="#v参数" class="headerlink" title="-v参数"></a>-v参数</h3><p>docker提供<code>-v</code>参数使实体机和容器共享目录，这对于有状态的服务很有用，目录挂载添加参数：<br><code>-v /home/jason/jason/docker/notebook:/home/jovyan/work</code></p>
-<h3 id="运行带有目录共享的容器"><a href="#运行带有目录共享的容器" class="headerlink" title="运行带有目录共享的容器"></a>运行带有目录共享的容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --rm -p 8888:8888 -v /home/jason/jason/docker/notebook:/home/jovyan/work   jupyter/datascience-notebook start-notebook.sh --NotebookApp.password=&apos;sha1:6587feaef3b1:6b243404e4cfaafe611fdf494ee71fdaa8c4a563&apos;</span><br></pre></td></tr></table></figure>
-<p>这样在jupyter里新建的notebook都会出现在实体机指定的目录里。由于这个镜像的原因 需在work目录下新建才能在实体机看到。</p>
-<h2 id="基于jupyter-datascience-notebook-生成pytorch-image"><a href="#基于jupyter-datascience-notebook-生成pytorch-image" class="headerlink" title="基于jupyter/datascience-notebook 生成pytorch image"></a>基于jupyter/datascience-notebook 生成pytorch image</h2><h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><p>因为没有合适的pytorch镜像，自己编辑Dockerfile:</p>
-<p>新建文件<code>Dockerfile</code>并编辑内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">FROM jupyter/datascience-notebook:281505737f8a</span><br><span class="line">MAINTAINER Jason.W. &quot;jianchengss@163.com&quot;</span><br><span class="line"># 下面是按官网的方法安装spotlight</span><br><span class="line">#RUN pip --no-cache-dir install --upgrade install http://download.pytorch.org/whl/cu75/torch-0.2.0.post3-cp36-cp36m-manylinux1_x86_64.whl </span><br><span class="line">#RUN pip --no-cache-dir install --upgrade torchvision</span><br><span class="line"></span><br><span class="line"># pytorch</span><br><span class="line">RUN conda install pytorch torchvision -c soumith</span><br><span class="line"># spotlight(https://github.com/maciejkula/spotlight)</span><br><span class="line">RUN conda install -c maciejkula -c soumith spotlight=0.1.2</span><br></pre></td></tr></table></figure>
-<h3 id="build"><a href="#build" class="headerlink" title="build"></a>build</h3><p>在Dockerfile目录里运行命令：<code>docker build -t jianchengss/datascience-pytorch:0.1 .</code><br>这样就生成了image：<code>jianchengss/datascience-pytorch:0.1</code>可以运行<code>docker images</code>查看本机上所有的image。</p>
-<h3 id="从构建的镜像运行容器"><a href="#从构建的镜像运行容器" class="headerlink" title="从构建的镜像运行容器"></a>从构建的镜像运行容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --rm -p 8888:8888 -v ~/workspace/python/notebooks-pytorch:/home/jovyan/work  --privileged=true jianchengss/datascience-pytorch:0.1 start-notebook.sh --NotebookApp.password=&apos;sha1:6587feaef3b1:6b243404e4cfaafe611fdf494ee71fdaa8c4a563&apos;</span><br></pre></td></tr></table></figure>
-<h3 id="最终容器"><a href="#最终容器" class="headerlink" title="最终容器"></a>最终容器</h3><p>经过以上步骤，测试完成后既可以执行最终运行的命令 注意 token换成自己的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8588:8888 -v ~/workspace/python/notebooks-pytorch:/home/jovyan/work  --privileged=true --name=pytorch jianchengss/datascience-pytorch:0.1 start-notebook.sh --NotebookApp.password=&apos;sha1:7aee2f913c8e:17d40f203cbd5c9820f302894a92724c3de9fba6&apos;</span><br></pre></td></tr></table></figure></p>
-<p><code>-it --rm</code> 换成了 <code>-d</code>,比之前多的参数有：</p>
-<p><code>--name=pytorch</code>，意为给container取一个名字，好区分和管理，缺省的话名字为一串随机的字符串。</p>
-<p><code>--privileged=true</code>出现文件夹访问权限的时候添加该属性</p>
-<p>此时运行<code>docker ps</code>即可查看运行着的容器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CONTAINER ID        IMAGE                                 COMMAND                  CREATED             STATUS              PORTS                    NAMES</span><br><span class="line">3bd3e30e9ab3        jianchengss/datascience-pytorch:0.1   &quot;tini -- start-notebo&quot;   4 seconds ago       Up 3 seconds        0.0.0.0:8588-&gt;8888/tcp   pytorch</span><br></pre></td></tr></table></figure></p>
-<h3 id="进入容器操作"><a href="#进入容器操作" class="headerlink" title="进入容器操作"></a>进入容器操作</h3><p>容器启动后有时候需要进入容器操作，比方说查看信息或者安装新的软件，此时执行<code>docker exec -it pytorch bash</code></p>
-<h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker stop container-name # 停止运行着的容器</span><br><span class="line">docker rm container-name # 删除已有的容器，要先停止</span><br><span class="line">docker rmi image-name # 删除已有的镜像</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/" data-id="cjdir1pu70000wjiyygjkwsyc" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyTorch/">PyTorch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
