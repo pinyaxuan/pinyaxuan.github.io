@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><meta name="keywords" content="NLP, ML, PyTorch"><title> | Jason Wang</title><link rel="stylesheet" type="text/css" href="//fonts.neworld.org/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Jason Wang</h1><a id="logo" href="/.">Jason Wang</a><p class="description">jianchengss</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="Arama"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title"></h1><div class="post-content"><div class="author-page"><a href="javascript:;" class="photo"><img src="weixin-001.jpg"></a><div class="author"><p><i class="fa fa-user">name：</i>Jason Wang</p><p><i class="fa fa-email">email：</i><a href="mailto:jianchengss@gmail.com" target="_blank">jianchengss@gmail.com</a></p><p><i class="fa fa-github">github：</i><a href="https://github.com/jianchengss" target="_blank">Jason Wang</a></p><p><i class="fa fa-weibo">weibo：</i><a href="http://weibo.com/jason_9477" target="_blank">Jason_9477</a></p></div></div><section class="modal fade bookmark-modal modal--fix" tabindex="-1" role="dialog" aria-labelledby="bookmarkModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <button class="btn btn-primary-outline btn-sm add-account"><i class="fa fa-plus-circle"></i> GitHub</button>
+        <button class="btn btn-primary-outline btn-sm add-group"><i class="fa fa-plus-circle"></i> Group</button>
+        <div class="btn-group btn-group-sm" role="group">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary-outline dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-tags"></i> Tags
+            </button>
+            <div class="dropdown-menu dropdown-menu-right tag-menu">
+              <div class="dropdown-item">
+                All Tags
+              </div>
+              <div role="separator" class="dropdown-divider"></div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary-outline btn-sm sync"><i class="fa fa-cloud"></i> Sync</button>
+      </div>
+      <div class="modal-body">
+        <header class="hd empty">
+          <div class="loading">
+            <div class="logo"><img class="spinner" src="resources/images/codelf_logo.png"></div>
+          </div>
+          <div class="empty">
+            <div class="top">
+              <i class="bookmark-logo fa fa-bookmark fa-5x"></i>
+              <h5>Add GitHub users to organize the stars and repositories</h5>
+            </div>
+            <div class="input-group form">
+              <input type="text" class="form-control" placeholder="username">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary submit" type="button">Add</button>
+              </span>
+            </div>
+            <div class="tip text-muted">*e.g. https://github.com/<span class="text-danger">username</span></div>
+          </div>
+        </header>
+        <section class="bd" role="tablist">
+          <script type="text/html" data-template="repoGroup">
+            <article class="card repo-group-item" data-id="{id}">
+              <header class="card-header hd" role="tab" id="repo_group_hd_{id}">
+                <a href="#repo_group_list_{id}" data-toggle="collapse" data-parent=".bd" aria-expanded="false" aria-controls="repo_group_list_{id}">{name}</a>
+                &nbsp;<span class="label label-info label-pill count">{itemCount}</span>
+                <div class="pull-xs-right ctrl">
+                  <div class="btn-group btn-group-sm" role="group">
+                    <div class="btn-group" role="group">
+                      <div class="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="repo_group_menu_{id}"><i class="fa fa-cog"></i></div>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="repo_group_menu_{id}">
+                        <div class="dropdown-item edit" data-id="{id}" data-name="{name}"><i class="fa fa-pencil-square-o"></i></div>
+                        <div class="dropdown-item del" data-id="{id}"><i class="fa fa-trash-o"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form class="form-inline pull-xs-right search">
+                  <div class="form-group">
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" placeholder="search...">
+                      <div class="input-group-addon submit"><i class="fa fa-search"></i></div>
+                    </div>
+                  </div>
+                </form>
+              </header>
+              <section class="card-block repo-list collapse" id="repo_group_list_{id}" role="tabpanel" aria-labelledby="repo_group_hd_{id}">
+                {items}
+              </section>
+            </article>
+          </script>
+          <script type="text/html" data-template="groupItem">
+            <div class="dropdown-item add-repo" data-id="{id}">
+              <span class="label label-default label-pill"><i class="fa fa-check"></i></span> {name}
+            </div>
+          </script>
+          <script type="text/html" data-template="tagItem">
+            <div class="dropdown-item add-repo" data-id="{id}">
+              <span class="label label-pill" style="background:{color};"><i class="fa fa-check"></i></span> {name}
+            </div>
+          </script>
+          <script type="text/html" data-template="tagDot">
+            <span style="color: {color}"><i class="fa fa-circle"></i></span>
+          </script>
+          <script type="text/html" data-template="repoItem">
+            <article class="card repo-item" data-id="{id}" data-repoid="{originRepoId}" data-name="{_full_name}" data-repolang="{language}" data-repostar="{stargazers_count}" data-repostar="{stargazers_count}" title="{language}">
+              <div class="card-block">
+                <header class="repo-item__hd"><h6><span class="label label-default label-pill">{language}</span><span class="label label-default label-pill">{stargazers_count}</span><a href="{html_url}" target="_blank">{full_name}</a></h6></header>
+                <section class="repo-item__bd fix-break-word">{description}</section>
+              </div>
+              <div class="card-footer">
+                <div class="btn-group btn-group-sm group-menu" role="group">
+                  <div class="btn-group" role="group">
+                    <a class="dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">
+                      Add to group
+                    </a>
+                    <div class="dropdown-menu">
+                      {groupItems}
+                      <div role="separator" class="dropdown-divider"></div>
+                      <div class="dropdown-item text-primary add-group">
+                        <i class="fa fa-plus-circle"></i> Add new group
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group btn-group-sm tag-menu" role="group">
+                  <div class="btn-group" role="group">
+                    <a class="dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">
+                      Add to tag
+                    </a>
+                    <div class="dropdown-menu">
+                      {tagItems}
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group btn-group-sm tag-dots fade" role="group"></div>
+              </div>
+            </article>
+          </script>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="modal fade bookmark-user-modal" tabindex="-1" role="dialog" aria-labelledby="bookmarkAccountModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 class="modal-title">Add GitHub User</h6>
+      </div>
+      <div class="modal-body">
+        <div class="text-muted">*e.g. https://github.com/<span class="text-danger">username</span></div>
+        <div class="input-group form">
+          <input type="text" class="form-control" placeholder="username">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary submit" type="button" data-dismiss="modal">Add</button>
+          </span>
+        </div>
+        <section class="list-group user-list">
+          <script type="text/html">
+          <article class="list-group-item user-item" data-id="{id}">
+            <a href="https://github.com/{name}" target="_blank">@{name}</a>
+            <div class="btn-group btn-group-sm pull-xs-right ctrl">
+              <button class="btn btn-secondary btn-sm sync" data-name="{name}" data-dismiss="modal"><i class="fa fa-refresh"></i> Sync</button>
+              <button class="btn btn-secondary btn-sm del" data-id="{id}"><i class="fa fa-trash-o"></i></button>
+            </div>
+          </article>
+          </script>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="modal fade bookmark-group-modal" tabindex="-1" role="dialog" aria-labelledby="bookmarkGroupModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 class="modal-title">Edit group</h6>
+      </div>
+      <div class="modal-body">
+          <input type="text" class="form-control group-name" placeholder="New group name">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary submit-group" type="button" data-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="modal fade bookmark-sync-modal" tabindex="-1" role="dialog" aria-labelledby="bookmarkSyncModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 class="modal-title">Sync</h6>
+      </div>
+      <div class="modal-body">
+        <div class="text-muted">Download/upload groups and tags with a sync id</div>
+        <input type="text" class="form-control sync-id" placeholder="Sync id">
+        <div class="text-danger sync-note">First, click "Upload" to backup and get a sync id</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary download" type="button" data-dismiss="modal"><i class="fa fa-cloud-download"></i> Download</button>
+        <button class="btn btn-secondary upload" type="button" data-dismiss="modal"><i class="fa fa-cloud-upload"></i> Upload</button>
+      </div>
+    </div>
+  </div>
+</section>
+</div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/11/机器学习资源汇总/">机器学习资源汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/">Docker:使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/Docker/" style="font-size: 15px;">Docker</a> <a href="/tags/PyTorch/" style="font-size: 15px;">PyTorch</a> <a href="/tags/Machine-Learning/" style="font-size: 15px;">Machine Learning</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">订阅</a> |  <a href="/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Jason Wang.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/js/totop.js?v=2.0.1" async></script><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","weixin","tsina","qzone","linkedin","fbook","twi","print","renren","sqq","evernotecn","bdysc","tqq","tqf","bdxc","kaixin001","tieba","douban","bdhome","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","h163","copy"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"]}};with(document)0[(getElementsByTagName('head')[0]||head).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script></body></html>
