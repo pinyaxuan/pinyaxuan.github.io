@@ -35,13 +35,13 @@
     </summary>
     
     
+      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
+    
       <category term="kesci" scheme="http://yoursite.com/tags/kesci/"/>
     
       <category term="competition" scheme="http://yoursite.com/tags/competition/"/>
     
       <category term="sentiment" scheme="http://yoursite.com/tags/sentiment/"/>
-    
-      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
     
   </entry>
   
@@ -139,9 +139,9 @@
     </summary>
     
     
-      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
-    
       <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
     
   </entry>
   
