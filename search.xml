@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[【科赛-练习赛】：文本情感分类模型搭建]]></title>
       <url>/2019/03/15/kesci-sentiment-classification/</url>
-      <content type="html"><![CDATA[<p>记录参加科赛举办的文本情感分类模型-练习赛，比赛地址： <a href="https://www.kesci.com/home/competition/5c77ab9c1ce0af002b55af86" target="_blank" rel="noopener">文本情感分类模型搭建 | 练习赛</a><br>使用TFIDF提前词频特征，利用PyTorch搭建线性预测模型，预测结果AUC 0.8658，截止2019-3-14科赛网公网排名第三</p>
+      <content type="html"><![CDATA[<p>记录参加科赛举办的文本情感分类模型-练习赛，比赛地址： <a href="https://www.kesci.com/home/competition/5c77ab9c1ce0af002b55af86" target="_blank" rel="noopener">文本情感分类模型搭建 | 练习赛</a><br>使用TFIDF提前词频特征，利用PyTorch搭建线性预测模型，预测结果AUC 0.8658，截止2019-3-14科赛网公网排名第三。</p>
 <p><img src="/2019/03/15/kesci-sentiment-classification/kesci-sentiment-classification-intro.png" alt="科赛排名（2019-3-14）"></p>
 <h2 id="赛题描述"><a href="#赛题描述" class="headerlink" title="赛题描述"></a>赛题描述</h2><p>本练习赛所用数据，是名为「Roman Urdu DataSet」的公开数据集。</p>
 <p>这些数据，均为文本数据。原始数据的文本，对应三类情感标签：Positive, Negative, Netural。</p>
@@ -120,18 +120,23 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>关键字：<code>kesci</code>,<code>competition</code>, <code>sentiment</code>,<code>PyTorch</code></p>
+<p>原载地址：<a href="https://www.jiancheng.ai/2019/03/15/kesci-sentiment-classification/" target="_blank" rel="noopener">https://www.jiancheng.ai/2019/03/15/kesci-sentiment-classification/</a></p>
+<p>转载请注明出处！</p>
+</blockquote>
 ]]></content>
       
         
         <tags>
-            
-            <tag> PyTorch </tag>
             
             <tag> kesci </tag>
             
             <tag> competition </tag>
             
             <tag> sentiment </tag>
+            
+            <tag> PyTorch </tag>
             
         </tags>
         
@@ -353,9 +358,9 @@
         
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> PyTorch </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
         
