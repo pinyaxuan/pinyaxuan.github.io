@@ -5,9 +5,9 @@
   <subtitle>生活有态度 技术有温度</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://jiancheng.ai/"/>
   <updated>2019-03-21T13:46:05.798Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://jiancheng.ai/</id>
   
   <author>
     <name>Jason Wang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>【科赛-练习赛】：文本情感分类模型搭建</title>
-    <link href="http://yoursite.com/2019/03/15/kesci-sentiment-classification/"/>
-    <id>http://yoursite.com/2019/03/15/kesci-sentiment-classification/</id>
+    <link href="https://jiancheng.ai/2019/03/15/kesci-sentiment-classification/"/>
+    <id>https://jiancheng.ai/2019/03/15/kesci-sentiment-classification/</id>
     <published>2019-03-15T09:36:15.000Z</published>
     <updated>2019-03-21T13:46:05.798Z</updated>
     
@@ -35,20 +35,20 @@
     </summary>
     
     
-      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
+      <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
     
-      <category term="kesci" scheme="http://yoursite.com/tags/kesci/"/>
+      <category term="kesci" scheme="https://jiancheng.ai/tags/kesci/"/>
     
-      <category term="competition" scheme="http://yoursite.com/tags/competition/"/>
+      <category term="competition" scheme="https://jiancheng.ai/tags/competition/"/>
     
-      <category term="sentiment" scheme="http://yoursite.com/tags/sentiment/"/>
+      <category term="sentiment" scheme="https://jiancheng.ai/tags/sentiment/"/>
     
   </entry>
   
   <entry>
     <title>人工智能新书推荐——《PyTorch机器学习从入门到实战》</title>
-    <link href="http://yoursite.com/2018/11/08/pytorch-in-action-book/"/>
-    <id>http://yoursite.com/2018/11/08/pytorch-in-action-book/</id>
+    <link href="https://jiancheng.ai/2018/11/08/pytorch-in-action-book/"/>
+    <id>https://jiancheng.ai/2018/11/08/pytorch-in-action-book/</id>
     <published>2018-11-08T02:58:54.000Z</published>
     <updated>2018-11-09T08:57:12.913Z</updated>
     
@@ -64,16 +64,16 @@
     </summary>
     
     
-      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
+      <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
     
-      <category term="人工智能" scheme="http://yoursite.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+      <category term="人工智能" scheme="https://jiancheng.ai/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
   <entry>
     <title>Markdown中的变量引用</title>
-    <link href="http://yoursite.com/2018/04/05/Markdown%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%BC%95%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/04/05/Markdown中的变量引用/</id>
+    <link href="https://jiancheng.ai/2018/04/05/Markdown%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%BC%95%E7%94%A8/"/>
+    <id>https://jiancheng.ai/2018/04/05/Markdown中的变量引用/</id>
     <published>2018-04-05T10:34:06.000Z</published>
     <updated>2019-03-14T13:41:38.317Z</updated>
     
@@ -90,14 +90,14 @@
     </summary>
     
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://jiancheng.ai/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>机器学习资源汇总</title>
-    <link href="http://yoursite.com/2018/02/11/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/"/>
-    <id>http://yoursite.com/2018/02/11/机器学习资源汇总/</id>
+    <link href="https://jiancheng.ai/2018/02/11/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/"/>
+    <id>https://jiancheng.ai/2018/02/11/机器学习资源汇总/</id>
     <published>2018-02-11T12:04:16.000Z</published>
     <updated>2019-03-14T13:37:30.279Z</updated>
     
@@ -115,14 +115,14 @@
     </summary>
     
     
-      <category term="MachineLearning" scheme="http://yoursite.com/tags/MachineLearning/"/>
+      <category term="MachineLearning" scheme="https://jiancheng.ai/tags/MachineLearning/"/>
     
   </entry>
   
   <entry>
     <title>Docker:使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</title>
-    <link href="http://yoursite.com/2018/02/11/Docker-%E4%BD%BF%E7%94%A8jupyter-notebook%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84PyTorch%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    <id>http://yoursite.com/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/</id>
+    <link href="https://jiancheng.ai/2018/02/11/Docker-%E4%BD%BF%E7%94%A8jupyter-notebook%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84PyTorch%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>https://jiancheng.ai/2018/02/11/Docker-使用jupyter-notebook基础镜像搭建自己的PyTorch开发环境/</id>
     <published>2018-02-11T11:52:31.000Z</published>
     <updated>2019-03-14T13:37:30.195Z</updated>
     
@@ -139,9 +139,9 @@
     </summary>
     
     
-      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://jiancheng.ai/tags/Docker/"/>
     
-      <category term="PyTorch" scheme="http://yoursite.com/tags/PyTorch/"/>
+      <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
     
   </entry>
   
