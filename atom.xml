@@ -35,13 +35,13 @@
     </summary>
     
     
-      <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
-    
       <category term="kesci" scheme="https://jiancheng.ai/tags/kesci/"/>
     
       <category term="competition" scheme="https://jiancheng.ai/tags/competition/"/>
     
       <category term="sentiment" scheme="https://jiancheng.ai/tags/sentiment/"/>
+    
+      <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
     
   </entry>
   
@@ -139,9 +139,9 @@
     </summary>
     
     
-      <category term="Docker" scheme="https://jiancheng.ai/tags/Docker/"/>
-    
       <category term="PyTorch" scheme="https://jiancheng.ai/tags/PyTorch/"/>
+    
+      <category term="Docker" scheme="https://jiancheng.ai/tags/Docker/"/>
     
   </entry>
   

@@ -11,13 +11,13 @@
         <title>【科赛-练习赛】：文本情感分类模型搭建</title>
         <pubTime>2019-03-15T09:36:15.000Z</pubTime>
         
-        <tag>PyTorch</tag>
-         
         <tag>kesci</tag>
          
         <tag>competition</tag>
          
         <tag>sentiment</tag>
+         
+        <tag>PyTorch</tag>
          
          
            
@@ -68,9 +68,9 @@
         <title>Docker:使用jupyter notebook基础镜像搭建自己的PyTorch开发环境</title>
         <pubTime>2018-02-11T11:52:31.000Z</pubTime>
         
-        <tag>Docker</tag>
-         
         <tag>PyTorch</tag>
+         
+        <tag>Docker</tag>
          
          
            
