@@ -130,13 +130,13 @@
         
         <tags>
             
+            <tag> PyTorch </tag>
+            
             <tag> kesci </tag>
             
             <tag> competition </tag>
             
             <tag> sentiment </tag>
-            
-            <tag> PyTorch </tag>
             
         </tags>
         
@@ -358,9 +358,9 @@
         
         <tags>
             
-            <tag> PyTorch </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> PyTorch </tag>
             
         </tags>
         
